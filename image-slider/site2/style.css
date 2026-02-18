@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#slider-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 170px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(rgb(107, 182, 244), white, rgb(107, 182, 244));
+}
+
+#image-container {
+    text-align: center;
+    opacity: 0.9;
+}
+
+#image-container img {
+    width: 500px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px #000;
+}
+
+.arrow-btn {
+    background-color: rgb(107, 182, 244);
+    font-size: 20px;
+    width: 40px;
+    height: 70px;
+    border: none;
+}
+
+.arrow-btn:hover {
+    background-color: dodgerblue;
+}
+
+#previous-slide-btn {
+    border-radius: 0px 10px 10px 0px;
+}
+
+#next-slide-btn {
+    border-radius: 10px 0px 0px 10px;
+}
+
+#navigation-circles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.navigation-circle {
+    width: 17px;
+    height: 17px;
+    border: black solid 1px;
+    border-radius: 10px;
+    margin: 4px;
+    background-color: rgb(107, 182, 244);
+}
+
+.navigation-circle:hover {
+    background-color: dodgerblue;
+}
+
+.active, .active:hover {
+    background-color: rgb(0, 78, 157);
+}
