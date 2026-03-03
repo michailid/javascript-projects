@@ -12,13 +12,12 @@ for (i = 0; i < listItems.length; i++) {
 function addItem() {
     // var list = document.getElementById("item-list");
     var itemValue = document.getElementById("items-input").value;
-    var itemTextNode = document.createTextNode(itemValue);
-    var li = document.createElement("li");
-    li.appendChild(itemTextNode);
-
-    if (itemValue === " ") {
+    if (itemValue.trim() == "") {
         alert("You must add shopping list items.");
     } else {
+        var itemTextNode = document.createTextNode(itemValue);
+        var li = document.createElement("li");
+        li.appendChild(itemTextNode);
         document.getElementById("item-list").appendChild(li);
     }
     document.getElementById("items-input").value = "";
@@ -34,9 +33,7 @@ function addItem() {
             var div = this.parentElement;
             div.style.display = "none";
         }
-
     }
-    
 }
 
 var close = document.getElementsByClassName("close-btn");
