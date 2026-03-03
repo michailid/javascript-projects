@@ -1,14 +1,3 @@
-var listItems = document.getElementsByTagName("li");
-var i;
-for (i = 0; i < listItems.length; i++) {
-    var span = document.createElement("span");
-    var crossSign = document.createTextNode("\u00D7");
-    span.className = "close-btn";
-    span.appendChild(crossSign);
-    // span.addEventListener("click", function () { removeElement(listItems[i]); });
-    listItems[i].appendChild(span);
-}
-
 function addItem() {
     // var list = document.getElementById("item-list");
     var itemValue = document.getElementById("items-input").value;
