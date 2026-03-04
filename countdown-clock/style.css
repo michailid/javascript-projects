@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    background-image: linear-gradient(rgb(100, 100, 100), white);
+    align-items: center;
+    justify-content: center;
+}
+
+#clock-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 1.5rem;
+    box-shadow: 5px 5px 10px rgb(74, 74, 74);
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.time-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.number {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+
+.label {
+    font-size: 25px;
+    font-weight: bold;
+}
