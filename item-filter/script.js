@@ -1,5 +1,6 @@
 function clearInput() {
     document.getElementById("search-box").value = '';
+    document.getElementById("search-clear-btn").style.display = 'none';
 }
 
 // search functionality
@@ -11,4 +12,7 @@ searchBox.addEventListener('input', () => {
         const matches = item.textContent.toLowerCase().includes(query);
         item.style.display = matches ? '' : 'none';
   });
+});
+searchBox.addEventListener('input', () => {
+    document.getElementById("search-clear-btn").style.display = searchBox.value ? 'inline' : 'none';
 });
