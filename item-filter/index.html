@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Filter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3 id="title-label">Restaurant menu</h3>
+    <div id="input-container">
+        <span>
+            <input id="search-box" type="search" placeholder="Type item..."/>
+             <svg id="search-clear-btn" onclick="clearInput()" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L13 13M13 1L1 13" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+        </span>
+    </div>
+    <ul id="item-list">
+        <li class="list-item">Spaghetti</li>
+        <li class="list-item">Pizza Mozzarella</li>
+        <li class="list-item">Coffee</li>
+        <li class="list-item">Pizza Carbonara</li>
+    </ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
