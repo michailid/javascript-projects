@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Box</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="chat-btn" type="button" onclick="startChat()">Chat</button>
+
+    <form id="chat-box-container" action="index1.html">
+        <h3 id="chat-label">Chat Box</h3>
+        <textarea id="message-box" placeholder="Type message..." required></textarea>
+        <button id="send-btn" type="submit">Send</button>
+        <button id="close-btn" onclick="closeChat()">Close</button>
+    </form>
+    
+    <script src="script.js"></script>
+</body>
+</html>
