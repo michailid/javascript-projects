@@ -3,7 +3,7 @@ function moveBox() {
     let motion = setInterval(frame, 10);
     let pos = 0;
     function frame() {
-        if (pos == 450) {
+        if (pos == 440) {
             clearInterval(motion);
         } else {
             pos++;
