@@ -3,3 +3,41 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+#canva {
+    width: 100vw;
+    height: 85vh;
+    background-color: white;
+}
+
+#horizontal-bar {
+    width: 100vw;
+    height: 15px;
+    background-image: linear-gradient(rgb(148, 148, 148), white, rgb(191, 191, 191));
+}
+
+#toolbar {
+    width: 100vw;
+    height: 12vh;
+    background-color: rgb(24, 179, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    font-size: 35px;
+}
+
+#color-picker-btn {
+    background-color: red;
+    box-shadow: inset 0px 0px 0px 10px white;
+}
+
+#pen-width-label {
+    font-size: 35px;
+    color: white;
+}
