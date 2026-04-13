@@ -5,8 +5,6 @@
 }
 
 #canvas {
-    /* width: 100vw;
-    height: 85vh; */
     background-color: white;
 }
 
@@ -30,14 +28,18 @@
     height: 50px;
     background-color: white;
     font-size: 35px;
+    border: none;
 }
 
-#color-picker-btn {
-    background-color: red;
-    box-shadow: inset 0px 0px 0px 10px white;
+.btn:hover {
+    outline: 1px solid black;
 }
 
 #pen-width-label {
     font-size: 35px;
     color: white;
+}
+
+#color-picker {
+    border: 10px solid white;
 }
