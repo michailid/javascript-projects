@@ -3,6 +3,8 @@ const ctx = canvas.getContext('2d');
 let isDrawing = false;
 const penWidthLabel = document.getElementById("pen-width-label");
 penWidthLabel.innerHTML = ctx.lineWidth;
+ctx.lineJoin = "round";
+ctx.lineCap = "round";
 canvas.addEventListener('mousedown', (e) => {
     isDrawing = true;
     const rect = canvas.getBoundingClientRect();
@@ -20,7 +22,9 @@ canvas.addEventListener('mousemove', (e) => {
 // button event listeners
 const decreaserBtn = document.getElementById("pen-decreaser-btn");
 decreaserBtn.addEventListener("click", () => {
-    ctx.lineWidth -= 1;
+    if (ctx.lineWidth > 1) {
+        ctx.lineWidth -= 1;
+    }
     penWidthLabel.innerHTML = ctx.lineWidth;
 });
 const increaserBtn = document.getElementById("pen-increaser-btn");
@@ -33,6 +37,6 @@ clearBtn.addEventListener("click", () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 });
 const colorPicker = document.getElementById("color-picker");
-colorPicker.addEventListener("input", (e) => {
+colorPicker.addEventListener("change", (e) => {
     ctx.strokeStyle = e.target.value;
 });
